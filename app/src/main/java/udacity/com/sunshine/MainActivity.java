@@ -68,6 +68,7 @@ public class MainActivity extends ActionBarActivity {
                                  Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_main, container, false);
 
+            String s;
             listview = (ListView) rootView.findViewById(R.id.listview_forecast);
 
             ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), R.layout.list_item_forecast, Arrays.asList(forecastArray));
